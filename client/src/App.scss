@@ -1,0 +1,87 @@
+.App {
+  background-color: #FFFBF0;
+  color: black;
+  min-height: 100vh;
+  font-size: 18px;
+  button {
+    display: block;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: #26A69A;
+    cursor: pointer;
+  }
+  input {
+    display: block;
+    border: none;
+    text-decoration: none;
+    font-size: inherit;
+    &[type='text'] {
+      box-shadow: 0 0 4px #26A69A;
+    }
+  }
+  display: flex;
+  padding-top: 10vh;
+  &>div {
+    padding: 5vw;
+  }
+  &>.form {
+    &>form {
+      display: flex;
+      flex-direction: column;
+      &>.element {
+        &>label {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &>div {
+            padding: 20px;
+          }
+          &>input {
+            height: 30px;
+            width: 30vw;
+          }
+        }
+      }
+      &>input {
+        align-self: center;
+        margin: 20px;
+        padding: 10px;
+        width: 10vw;
+        background-color: #26A69A;
+        color: black;
+        font-size: 16px;
+        font-weight: 200;
+        box-shadow: 0 0 4px #26A69A;
+        cursor: pointer;
+      }
+    }
+  }
+  &>.search {
+    &>.input {
+      display: flex;
+      &>input {
+        width: 30vw;
+        height: 40px;
+      }
+      &>button {
+        margin: 0 10px;
+        padding: 0 10px;
+        font-weight: 200;
+        font-size: 16px;
+      }
+    }
+    &>.results {
+      padding: 40px 0;
+      &>.field {
+        display: flex;
+        padding: 10px;
+        &>.label {
+          width: 150px;
+          color: #26A69A;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
